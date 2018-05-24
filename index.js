@@ -1,5 +1,8 @@
-function produceDrivingRange(){
-  return function(){};
+function produceDrivingRange(range){
+  return function(a, b){
+    const dis = Math.abs(a-b);
+    return dis>range ? `` : ``;
+  };
 }
 
 function produceTipCalculator(){
