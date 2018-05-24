@@ -5,8 +5,9 @@ function produceDrivingRange(range){
   };
 }
 
-function produceTipCalculator(){
-  return function(){
+function produceTipCalculator(tipPercentage){
+  return function(total){
+    return total * tipPercentage;
   }
 }
 
