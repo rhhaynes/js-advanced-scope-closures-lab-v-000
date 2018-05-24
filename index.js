@@ -1,7 +1,7 @@
 function produceDrivingRange(range){
   return function(a, b){
     const dis = Math.abs(parseInt(a)-parseInt(b));
-    return dis>range ? `${dis} blocks out of range` : `within range by ${dis}`;
+    return dis>range ? `${dis-range} blocks out of range` : `within range by ${range-dis}`;
   };
 }
 
