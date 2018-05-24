@@ -6,9 +6,7 @@ function produceDrivingRange(range){
 }
 
 function produceTipCalculator(tipPercentage){
-  return function(total){
-    return total * tipPercentage;
-  }
+  return total => total * tipPercentage;
 }
 
 // function createDriver(){
