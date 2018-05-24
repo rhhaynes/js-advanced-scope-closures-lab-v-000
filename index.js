@@ -1,6 +1,6 @@
 function produceDrivingRange(range){
   return function(a, b){
-    const dis = Math.abs(a-b);
+    const dis = Math.abs(parseInt(a)-parseInt(b));
     return dis>range ? `` : ``;
   };
 }
